@@ -563,7 +563,7 @@ main .text {
 
   .form__left {
       height: 100%;
-      /* background: url("../../assets/img/card4.jpg") no-repeat center; */
+      background: url("../../assets/img/card4.jpg") no-repeat center;
       background-size: cover;
   }
 
