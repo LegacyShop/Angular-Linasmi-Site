@@ -1,0 +1,133 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="page"><nav>
+    <ul class="menu">
+        <li class="logo"><h3>Linasmi  <img src="assets/img/logo.jpg" alt="logo"></h3></li>
+        <li class="item {{isActive ? 'active' : 'inactive'}}"><a href="#main">Главная</a></li>
+        <li class="item {{isActive ? 'active' : 'inactive'}}"><a href="#slider">Платья</a></li>
+        <li class="item {{isActive ? 'active' : 'inactive'}}"><a href="#form">Оформить заказ</a></li>
+        <li class="item {{isActive ? 'active' : 'inactive'}}"><a href="#footer">О нас</a></li>
+        <li class="item button {{isActive ? 'active' : 'inactive'}}"><a href="#">Войти</a></li>
+        <li class="item button secondary {{isActive ? 'active' : 'inactive'}}"><a href="#">Зарегистрироваться</a></li>
+        <li class="toggle" (click)="changeToggle($event)"><a href="#"><span class="bars"></span></a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <div class="text">
+        <h1>будьте прекрасны, вместе с LIN'ASMI</h1>
+        <ul>
+            <li>Медленная мода</li>
+            <li>Дистанционный пошив</li>
+            <li>Сообственное производство</li>
+        </ul>
+
+    </div>
+
+    <div class="product__title" id="slider">
+        <h1>Самые лучшие платья</h1>
+    </div>
+
+
+    <section class="slider">
+        <ul *ngFor="let product of products; let i = index" id="autoWidth" class="cs-hidden">
+        <!--1------------------------------------>	
+
+      <li class="item-a">
+    <!--box-slider--------------->
+        <div class="box">
+        <!--img-box---------->
+        <div class="slide-img">
+        <img alt="1" src="{{product.imgPath}}">
+        <!--overlayer---------->
+        <div class="overlay">
+        <!--buy-btn------>	
+        <a href="#form" class="buy-btn">Заказать</a>	
+        </div>
+        </div>
+        <!--detail-box--------->
+        <div class="detail-box">
+        <!--type-------->
+        <div class="type">
+        <a href="#">{{product.name}}</a>
+        <span>{{product.description}}</span>
+        </div>
+        <!--price-------->
+        <a href="#" class="price">{{product.price}}₽</a>
+            
+        </div>
+        
+        </div>		
+    </li>
+    </ul>
+        </section>
+
+
+    <section class="form" id="form">
+        <div class="form__container">
+            <div class="form__contact-box">
+                <div class="form__left"></div>
+                <div class="form__right">
+                    <h2>Оформить заказ</h2>
+                    <input type="text" class="form__field" placeholder="Ваше имя">
+                    <input type="email" class="form__field" placeholder="Ваша электронная почта">
+                    <input type="text" class="form__field" placeholder="Ваш номер телефона">
+                    <textarea class="form__field form__area" placeholder="Опишите, какое платье вы хотите"></textarea>
+                    <button class="form__btn">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</main>
+<footer class="footer-distributed" id="footer">
+    <div class="footer-left">
+
+        <h3>Linasmi  <img src="assets/img/logo.jpg" alt="logo"></h3>
+
+        <p class="footer-links">
+            <a href="#" class="link-1">Главная</a>
+            
+            <a href="#slider">Платья</a>
+        
+            <a href="#form">Оформить заказ</a>
+        </p>
+
+        <p class="footer-company-name">Copyright ©2022 Linasmi</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+7 (922) (239) 48-58</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">support@company.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>О нас</span>
+            Приветствую, я Ясмина<br>
+            <b>Дизайнерская Женская Одежда</b><br>
+            Одежда (бренд)
+        </p>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://instagram.com/lin.asmi?igshid=YmMyMTA2M2Y="><i class="fa fa-linkedin"></i></a>
+            <a href="https://vk.com/lin.asmi"><i class="fa fa-vk"></i></a>
+
+        </div>
+
+    </div>
+</footer>
+
+</div>
