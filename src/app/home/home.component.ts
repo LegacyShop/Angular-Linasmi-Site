@@ -12,21 +12,14 @@ export class HomeComponent implements OnInit {
       name: 'Название',
       price: 4999,
       discount: 20,
-      imgPath: 'assets/img/card3.jpg',
+      imgPath: 'assets/img/card10.jpg',
       description: 'Уникальное платье'
     },
     {
       name: 'Название',
       price: 4999,
       discount: 20,
-      imgPath: 'assets/img/card6.jpg',
-      description: 'Уникальное платье'
-    },
-    {
-      name: 'Название',
-      price: 4999,
-      discount: 20,
-      imgPath: 'assets/img/card5.jpg',
+      imgPath: 'assets/img/card9.jpg',
       description: 'Уникальное платье'
     },
     {
@@ -40,14 +33,21 @@ export class HomeComponent implements OnInit {
       name: 'Название',
       price: 4999,
       discount: 20,
-      imgPath: 'assets/img/card1.jpg',
+      imgPath: 'assets/img/card6.jpg',
       description: 'Уникальное платье'
     },
     {
       name: 'Название',
       price: 4999,
       discount: 20,
-      imgPath: 'assets/img/card6.jpg',
+      imgPath: 'assets/img/card11.jpg',
+      description: 'Уникальное платье'
+    },
+    {
+      name: 'Название',
+      price: 4999,
+      discount: 20,
+      imgPath: 'assets/img/card8.jpg',
       description: 'Уникальное платье'
     },
     {
@@ -61,7 +61,63 @@ export class HomeComponent implements OnInit {
       name: 'Название',
       price: 4999,
       discount: 20,
-      imgPath: 'assets/img/card8.jpg',
+      imgPath: 'assets/img/card13.jpg',
+      description: 'Уникальное платье'
+    },
+    {
+      name: 'Название',
+      price: 4999,
+      discount: 20,
+      imgPath: 'assets/img/card2.jpg',
+      description: 'Уникальное платье'
+    },
+    {
+      name: 'Название',
+      price: 4999,
+      discount: 20,
+      imgPath: 'assets/img/card3.jpg',
+      description: 'Уникальное платье'
+    },
+    {
+      name: 'Название',
+      price: 4999,
+      discount: 20,
+      imgPath: 'assets/img/card1.jpg',
+      description: 'Уникальное платье'
+    },
+    {
+      name: 'Название',
+      price: 4999,
+      discount: 20,
+      imgPath: 'assets/img/card5.jpg',
+      description: 'Уникальное платье'
+    },
+    {
+      name: 'Название',
+      price: 4999,
+      discount: 20,
+      imgPath: 'assets/img/card11.jpg',
+      description: 'Уникальное платье'
+    },
+    {
+      name: 'Название',
+      price: 4999,
+      discount: 20,
+      imgPath: 'assets/img/card14.jpg',
+      description: 'Уникальное платье'
+    },
+    {
+      name: 'Название',
+      price: 4999,
+      discount: 20,
+      imgPath: 'assets/img/card10.jpg',
+      description: 'Уникальное платье'
+    },
+    {
+      name: 'Название',
+      price: 4999,
+      discount: 20,
+      imgPath: 'assets/img/card13.jpg',
       description: 'Уникальное платье'
     }
   ]
