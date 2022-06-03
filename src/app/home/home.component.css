@@ -425,11 +425,26 @@ main .text {
     background: #222;
     color: white;
 }
+.slider {
+   overflow-y: hidden;
+}
+
+.slider::-webkit-scrollbar {
+    height: 10px;
+}
+.slider::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.slider::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
 .slider .box{
 	width:300px;
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
 	border-radius: 10px;
-	overflow: hidden;
 	margin: 25px;
 }
 .slider .slide-img{
@@ -523,11 +538,10 @@ main .text {
 	width:100%;
 	height: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content:stretch;
 	align-items: center;
 }
   /* section 2*/
-
   
   .form__container {
       position: relative;
@@ -553,7 +567,7 @@ main .text {
   }
 
   .form__contact-box {
-      max-width: 850px;
+      max-width: 1200px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       justify-content: center;
@@ -611,6 +625,7 @@ main .text {
 
   .form__area {
       min-height: 150px;
+      max-height: 400px;
   }
 
   .form__btn {
@@ -631,14 +646,17 @@ main .text {
   }
 
   @media screen and (max-width:880px) {
-      .form__contact-box {
-          grid-template-columns: 1fr;
-      }
+    .form__contact-box {
+        grid-template-columns: 1fr;
+    }
 
-      .form__left {
-          height: 200px;
-      }
-  }
+    .form__left {
+        height: 200px;
+    }
+    .form__area {
+        min-width: 300px;
+    }
+}
 
   .form__field::-webkit-scrollbar {
     width: 0.35rem;
